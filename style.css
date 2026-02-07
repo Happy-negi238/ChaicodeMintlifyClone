@@ -667,8 +667,7 @@ header {
 .carousel-customer-logo{
     position: relative;
     width: 100%;
-    padding: 0 18%;
-    /* background-color: aquamarine; */
+    padding: 0 0 0 18%;
 }
 .carousel-content{
     display: flex;
@@ -676,8 +675,7 @@ header {
 }
 .carousel{
     max-width: 410px;
-    padding-left: 16px;   
-    /* background-color: red; */
+    padding-left: 16px;
     width: 100%;
 }
 .carousel .carousel-image{
@@ -685,6 +683,28 @@ header {
     overflow: hidden;
     margin-bottom: 8px;
     border-radius: 20px;
+}
+.carousel .carousel-para{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    gap: 24px;
+}
+.carousel .carousel-para p{
+    color: var(--lite-black-color);
+    font-size: 16px;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-height: 24px;
+    text-overflow: ellipsis;
+}
+.carousel .carousel-para a{
+    text-decoration: none;
+    color: var(--carousel-inactive);
+    font-weight: 500;
+}
+.carousel .carousel-para a:hover{
+    color: var(--green-background);
 }
 .carousel .carousel-image img{
     width: 100%;
@@ -700,21 +720,24 @@ header {
 .carousel-button button{
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 36px;
     height: 26px;
     border: 0;
     background-color: transparent;
 }
 .carousel-button button i{
-    width: 28px;
+    width: 23px;
+    height: 23px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 28px;
     background-color: var(--main-black-color);
     color: var(--main-white);
-    border-radius: 50px;
+    border-radius:20px;
+}
+.carousel-button button:nth-child(1) i{
+    background-color: var(--carousel-inactive);
 }
 .documentation-main-container{
     padding: 120px 24px;
